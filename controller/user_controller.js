@@ -5,7 +5,7 @@ const atob = require("atob")
 
 const addUser = async (req, res) => {
     try {
-        console.log('req,body', req.body);
+        console.log('req,body12345', req.body);
         if (!req.body.name || !req.body.email || !req.body.password || !req.body.role) {
             return res.status(400).json({
                 message: "name, email, password, and role are required"
